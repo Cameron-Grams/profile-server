@@ -29,7 +29,7 @@ const projects = {
         secondParagraph: "Second text",
         thirdParagraph: "Third text"
        },
-    2: {
+    6: {
         title: "Pomodoro",
         firstParagraph: "First text",
         secondParagraph: "Second text",

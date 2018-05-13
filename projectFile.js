@@ -25,21 +25,21 @@ const projects = {
        },
     5: {
         title: "Simon",
-        firstParagraph: "First text",
-        secondParagraph: "Second text",
-        thirdParagraph: "Third text"
+        firstParagraph: "This is a browswer version of the 1980s game built with JQuery and SVG.  There are audio files that are called through the HTML5 API.",
+        secondParagraph: "The intent was to try to duplicate the game, just for fun.",
+        thirdParagraph: "The sound files could likely be improved in a future version."
        },
     6: {
         title: "Pomodoro",
-        firstParagraph: "First text",
-        secondParagraph: "Second text",
-        thirdParagraph: "Third text"
+        firstParagraph: "This is a browser based work-timer built using JQuery.",
+        secondParagraph: "The practice of breaking up the workday can lead to greater productivity.",
+        thirdParagraph: "A future version will have a TODO feature added, to avoid  distraction by making a quick note."
        },
     7: {
         title: "Real Automotive, NC",
-        firstParagraph: "First text",
-        secondParagraph: "Second text",
-        thirdParagraph: "Third text"
+        firstParagraph: "This is a straight HTML/CSS site with Javascript enabling the Google Maps feature.",
+        secondParagraph: "This is the first commercial site that I built.",
+        thirdParagraph: "A future site could add the contact form to reach the garage with an email, as an additional option to the phone call feature."
        }
 };
 

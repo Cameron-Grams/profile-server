@@ -1,7 +1,6 @@
 const express = require( 'express' );
 const bodyParser = require( 'body-parser' ); 
-const { encryptBlock } = require( './encryptBlock' ); 
-const SHA256 = require( 'crypto-js/sha256' );
+const { projects } = require( './projectFile' ); 
 
 
 const app = express();
@@ -16,9 +15,9 @@ app.use(function (req, res, next) {
 
 app.use( bodyParser.json() ); 
 
-
-app.post( '/singleblock', ( req, res ) => {
-    const response = encryptBlock.returnBlock( req.body );
+app.post( '/projects', ( req, res ) => {
+    const projectIndex = req.body.index;
+    const response = projects[ projectIndex ]; 
     res.send( response );
 } ); 
 

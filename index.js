@@ -15,10 +15,13 @@ app.use(function (req, res, next) {
 
 app.use( bodyParser.json() ); 
 
+app.get( '/wake', ( req, res ) => {
+    res.send( { message: "Heroku is awake" } );
+} );
+
 app.post( '/projects', ( req, res ) => {
     const projectIndex = req.body.index;
     const response = projects[ projectIndex ]; 
-    console.log( 'sending response: ', response );
     res.send( response );
 } ); 
 

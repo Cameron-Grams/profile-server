@@ -19,6 +19,10 @@ app.get( '/wake', ( req, res ) => {
     res.send( { message: "Heroku is awake" } );
 } );
 
+app.get( '/all-projects', ( req, res ) => {
+    res.send( { projects } ); 
+} );
+
 app.post( '/projects', ( req, res ) => {
     const projectIndex = req.body.index;
     const response = projects[ projectIndex ]; 
